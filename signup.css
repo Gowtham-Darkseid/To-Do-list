@@ -1,0 +1,77 @@
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #86b7ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1{
+            color:rgb(224, 255, 255);
+            text-align: center;
+             margin-bottom: 20px; 
+             position: absolute; 
+             top: 20px; 
+             width: 100%;
+             font-family: "Poppins", serif;
+             font-weight: 700;
+             font-style: normal;
+             font-size: 50px;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px; 
+        }
+        .container:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+        .container input {
+            width: 90%; 
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; 
+        }
+        .container h2 {
+            font-family: "Poppins", serif;
+            font-weight: 700;
+            font-style: normal;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .container button {
+            display: block;
+            margin: 0 auto;
+            margin-top: 10px;
+            width: 100px;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+        }
+        .container p {
+            font-size: 12px;
+            text-align: center;
+        }
+        .container a {
+            color: #007bff;
+            text-decoration: none;
+        }

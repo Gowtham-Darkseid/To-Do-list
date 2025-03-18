@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <script>
+        function togglePassword() {
+            var passwordInput = document.getElementById("password");
+            var checkbox = document.getElementById("showPassword");
+            passwordInput.type = checkbox.checked ? "text" : "password";
+        }
+    </script>
+    <style>
+        .password-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: relative;
+        }
+        .password-container input[type="password"],
+        .password-container input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-left: 30px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .password-toggle {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+        .password-toggle input {
+            margin-right: 2px;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>TODO-LIST</h1>
+    <div class="container">
+        <h2>LOGIN</h2>
+        <form action="login_process.php" method="POST">
+            <input type="email" name="email" placeholder="Email" required>
+            <div class="password-container">
+                <input type="password" id="password" name="password" placeholder="password">
+                <div class="password-toggle">
+                    <input type="checkbox" id="showPassword" onclick="togglePassword()">
+                    <label for="showPassword">Show</label>
+                </div>
+            </div>
+            <button type="submit">LOGIN</button>
+        </form>
+        <div class="signup-link">
+            <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #86b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px; 
+    position: absolute; 
+    top: 70px; 
+    width: 100%;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    color: rgb(224, 255, 255);
+}
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 13px;
+    width: 400px; 
+    text-align: center;
+}
+
+.container:hover{
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+}
+.container h2 {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+.container input {
+    width: 80%; 
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.container button {
+    margin-top: 10px ;
+    width: 100px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.container button:hover {
+    background-color: #0056b3;
+}
+.container .signup-link {
+    margin-top: 20px;
+}
+.container .signup-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+.container .signup-link a:hover {
+    text-decoration: underline;
+}
+
