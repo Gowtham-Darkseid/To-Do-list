@@ -107,45 +107,7 @@
         </form>
         <ul id="taskList">
             <ul>
-                <?php
-$conn = new mysqli("localhost", "root", "", "todo_db");
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_POST["add"])) {
-        $task = trim($_POST["task"]);
-        if (!empty($task)) {
-            $stmt = $conn->prepare("INSERT INTO tasks (text) VALUES (?)");
-            $stmt->bind_param("s", $task);
-            $stmt->execute();
-            $stmt->close();
-        }
-    } elseif (isset($_POST["toggle"])) {
-        $taskId = $_POST["toggle"];
-        $conn->query("UPDATE tasks SET completed = NOT completed WHERE id = $taskId");
-    } elseif (isset($_POST["delete"])) {
-        $taskId = $_POST["delete"];
-        $conn->query("DELETE FROM tasks WHERE id = $taskId");
-    }
-}
-
-$result = $conn->query("SELECT * FROM tasks ORDER BY id DESC");
-
-while ($row = $result->fetch_assoc()): ?>
-    <li class="<?= $row['completed'] ? 'completed' : '' ?>">
-        <form method="POST" action="todo.php" style="display:inline;">
-            <button type="submit" name="toggle" value="<?= $row['id'] ?>">✔</button>
-        </form>
-        <?= htmlspecialchars($row['text']) ?>
-        <form method="POST" action="todo.php" style="display:inline;">
-            <button type="submit" name="delete" value="<?= $row['id'] ?>">✖</button>
-        </form>
-    </li>
-<?php endwhile;
-?>
 
             </ul>
         </ul>
