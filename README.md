@@ -65,4 +65,11 @@ To get this project up and running locally, follow these steps:
 
 ![Screenshot From 2025-03-26 14-57-09](https://github.com/user-attachments/assets/bd71e54f-1af7-4704-ad06-6a94f8ffe1a1)
 
+## Badges
+
+Add badges from somewhere like: [shields.io](https://shields.io/)
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 
