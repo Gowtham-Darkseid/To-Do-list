@@ -61,6 +61,8 @@ To get this project up and running locally, follow these steps:
 4. **Marking Tasks as Completed**:
     - Check the box next to the task to mark it as completed.
 
+## ScreenShot
 
+![Screenshot From 2025-03-26 14-57-09](https://github.com/user-attachments/assets/bd71e54f-1af7-4704-ad06-6a94f8ffe1a1)
 
 
